@@ -1,0 +1,23 @@
+
+<nav class="navbar navbar-default">
+  <div class="navbar-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" ><b><i>Celcius To Farenheit Converter Application</i></b></a>
+    </div>
+    <div class="nav navbar-nav">
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <app-celcius (raiseCelciusValueEnterEvent) = "onCelciusValueChange($event)"></app-celcius>
+    </div>
+    <div class="col-md-1 text-center"><span class="glyphicon glyphicon-circle-arrow-right" style="font-size: 40px"></span></div>
+    <div class="col-md-5">
+      <app-farenheit [farenValueprty]="farenValue"></app-farenheit>
+    </div>
+  </div>  
+</div>
