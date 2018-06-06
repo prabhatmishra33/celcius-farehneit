@@ -1,7 +1,7 @@
 <div class="form-group row">
     <div class="col-xs-8">
         <label for="celid" class="col-xs-3">Fahrenheit</label>
-        <input class="form-control col-xs-4 col-md-offset-2" id="celid" type="text" [(ngModel)]="farenValueprty">
+        <input class="form-control col-xs-4 col-md-offset-2" id="celid" type="text" [(ngModel)]="farenValueprty" (input)="onFahrenEnter($event)">
     </div>
   </div>
 
@@ -11,5 +11,11 @@
     <div class="panel panel-info">
         <div class="panel-heading text-center"><b>fahrenheit</b></div>
         <div class="panel-body">{{ farenValueprty }}</div>
+    </div>
+  </div>
+
+  <div class="Container">
+    <div class="text-danger" *ngIf = "errDisp" style="font-family: Cambria;font-size: 20px">
+      {{ errorMsg }}
     </div>
   </div>

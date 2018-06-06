@@ -13,11 +13,11 @@
 <div class="container">
   <div class="row">
     <div class="col-md-5">
-      <app-celcius (raiseCelciusValueEnterEvent) = "onCelciusValueChange($event)"></app-celcius>
+      <app-celcius [celciusValue]="celValue" (raiseCelciusValueEnterEvent) = "onCelciusValueChange($event)"></app-celcius>
     </div>
     <div class="col-md-1 text-center"><span class="glyphicon glyphicon-circle-arrow-right" style="font-size: 40px"></span></div>
     <div class="col-md-5">
-      <app-farenheit [farenValueprty]="farenValue"></app-farenheit>
+      <app-farenheit [farenValueprty]="farenValue" (raiseFahrenValueEnterEvent) = "onFahrenValueChange($event)"></app-farenheit>
     </div>
   </div>  
 </div>
