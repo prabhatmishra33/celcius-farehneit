@@ -14,3 +14,9 @@
       <div class="panel-body">{{ celciusValue }}</div>
   </div>
 </div>
+
+<div class="Container">
+  <div class="text-danger" *ngIf = "errDisp" style="font-family: Cambria;font-size: 20px">
+    {{ errorMsg }}
+  </div>
+</div>
